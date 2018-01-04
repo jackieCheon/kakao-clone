@@ -1,0 +1,65 @@
+.top-header--transparent {
+    background-color: transparent;
+}
+
+.profile .profile__header {
+    height: 80vh; /*vh= view for height 스크린의 80%*/
+    background-image: url('https://mir-s3-cdn-cf.behance.net/project_modules/disp/dc330943608363.598cd59b0d72c.jpg');
+    background-color: blueviolet;
+    background-size: 110%;
+    width: 100%;
+    position: relative; /*relative를 줬기 때문에 락 걸린것을 풀고 패딩을 줄 수 있음*/
+    top: -60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.profile__header .profile__header-container {
+    text-align: center;
+    position: relative; /*relative를 주지 않으면 이동 할 수 없음*/
+    bottom: -60px;
+}
+
+.profile__header-container img {
+    width: 100px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.profile .profile__container {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profile__container input {
+    padding : 5px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.profile__actions {
+    display: flex;
+}
+
+.profile__action {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 15px;
+    cursor: pointer;
+}
+
+.profile__action-circle {
+    background-color: #f2f2f2;
+    padding: 15px;
+    border-radius: 50%
+}
+
+.profile__action-title {
+    font-size: 12px;
+    font-weight: 600;
+}

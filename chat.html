@@ -5,10 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
     <title>Chat</title>
 </head>
-<body>
-    <header>
+<body class="body-chat">
+    <header class="top-header chat-header"> <!--header에 class name이 없으면 css 적용안됨 -->
         <div class="header__top">
             <div class="header__column">
                 <i class="fa fa-fighter-jet" aria-hidden="true"></i>
@@ -23,19 +24,20 @@
                 <span header="header__battery">66% <i class="fa fa-battery-full"></i></span>
             </div>
         </div>
-        <div class="header__bottom"></div>
+        <div class="header__bottom">
         <div class="header__column">
             <a href="index.html">
             <i class="fa fa-chevron-left fa-lg"></i>
             </a>
         </div>
         <div class="header__column">
-            <span class="header__text">React</i></span>
+            <span class="header__text">김성훈</i></span>
         </div>
         <div class="header__column">
             <i class="fa fa-search"></i>
             <i class="fa fa-bars"></i>
         </div>
+    </div>
     </header>
     <main class="chat">
         <div class="date-divider">
@@ -56,19 +58,21 @@
                         <span class="chat__message-body">
                                 You can do it perfectly!!
                         </span>
-                </div>
+                 </div>  
             <span class="chat__message-time">19:30</span>    
-            </div>        
+                
+        </div>    
     </main>
+
     <div class="type-message">
-        <i class="fa fa-plus fa-2x"></i>
-    </div>
+        <i class="fa fa-plus fa-lg"></i>
     <div class="type-message__input">
         <input type="text">
-        <i class="fa fa-smile-o"></i>
-        <span class="record-message">
+        <i class="fa fa-smile-o fa-lg"></i>
+        <span class="record-message fa-lg">
             <i class="fa fa-microphone"></i>
         </span>
     </div>
+</div>
 </body>
 </html>

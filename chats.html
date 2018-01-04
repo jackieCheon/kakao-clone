@@ -5,10 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
     <title>Chats</title>
 </head>
 <body>
-    <header>
+    <header class="top-header">
         <div class="header__top">
             <div class="header__column">
                 <i class="fa fa-fighter-jet" aria-hidden="true"></i>
@@ -23,13 +24,15 @@
                 <span header="header__battery">66% <i class="fa fa-battery-full"></i></span>
             </div>
         </div>
-        <div class="header__bottom"></div>
+        <div class="header__bottom">
         <div class="header__column">
                 <span class="header__text">Edit</span>
         </div>
         <div class="header__column">
-            <span class="header__text">Chats <i class="fa fa-caret-down"></i></span>
+            <span class="header__text">Chats<i class="fa fa-caret-down"></i></span>
         </div>
+        <div class="header__column"></div>
+    </div>
     </header>    
 
         <main class="chats">
@@ -44,8 +47,8 @@
                     <div class="chat__content">
                         <img src="images/avatar.jpg">
                         <div class="chat__preview">
-                            <h3 class="chat__preview">Lynn</h3>
-                            <span class="chat__last-message">Hello! This is test message.</span>
+                            <h3 class="chat__user">임근석</h3>
+                            <span class="chat__last-message">HOPS 개발 현황</span>
                         </div>
                     </div>
                     <span class="chat__date-time">
@@ -59,8 +62,8 @@
                     <div class="chat__content">
                         <img src="images/avatar.jpg">
                         <div class="chat__preview">
-                            <h3 class="chat__preview">Kakao Talk</h3>
-                            <span class="chat__last-message">Your logged into KakaoTalk PC from the PC</span>
+                            <h3 class="chat__preview">박진미</h3>
+                            <span class="chat__last-message">일러스트 마스터를 위한 첫 걸음</span>
                         </div>
                     </div>
                     <span class="chat__date-time">
@@ -70,7 +73,7 @@
             </li>
         </ul>    
 
-        <div class="chat-bttn">
+        <div class="chat-btn">
             <i class="fa fa-comment"></i>
         </div>
         </main>
@@ -90,4 +93,7 @@
             </a>
         </nav>
 </body>
+<div class="bigScreenText">
+        <span>Please make your screen smaller</span>
+    </div>
 </html>
